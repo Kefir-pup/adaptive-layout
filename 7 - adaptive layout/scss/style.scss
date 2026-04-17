@@ -1,0 +1,22 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize";
+@import "global/_fonts";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_header";
+@import "blocks/_page-content";
+@import "blocks/_info-banner";
+@import "blocks/_advantages";
+@import "blocks/_footer";
+@import "blocks/_team-list";
+@import "blocks/_team-card";
+@import "blocks/_socials";
+@import "blocks/_technical-content";
+@import "blocks/_technical-footer";
