@@ -1,0 +1,56 @@
+.technical-content {
+    padding-top: 195px;
+
+    @include vp-1439 {
+        padding-top: 166px;
+    }
+
+    @include vp-767 {
+        padding-top: 157px;
+    }
+
+    &__title {
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        color: #000;
+        margin: 0 auto 30px;
+
+        @include vp-1439 {
+            font-size: 28px;
+            line-height: 32px;
+            max-width: 528px;
+            margin: 0 auto 20px;
+        }
+
+        @include vp-767 {
+            font-size: 26px;
+            line-height: 24px;
+            max-width: 295px;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #1D252D;
+        margin: 0 auto 60px;
+        max-width: 600px;
+
+        @include vp-1439 {
+            margin: 0 auto 40px;
+        }
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 18px;
+            max-width: 295px;
+        }
+    }
+        &__text-two {
+            display: block;
+        }
+}

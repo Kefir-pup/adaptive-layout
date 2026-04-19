@@ -1,0 +1,56 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: flex-end;
+  gap: 20px 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1439 {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  @include vp-767 {
+    gap: 30px;
+  }
+
+  &__link {
+    display: flex;
+    color: $color-trout;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:focus-visible {
+      color: #fff;
+      outline: none;
+    }
+
+    &--technical:hover {
+      color: #D6D2C4;
+    }
+
+    &--technical:focus-visible {
+      color: #D6D2C4;
+      outline: none;
+    }
+  }
+
+
+  &--technical {
+    justify-content: center;
+
+    @include vp-1439 {
+      gap: 32px;
+    }
+
+        @include vp-767 {
+      gap: 24px;
+    }
+  }
+
+}

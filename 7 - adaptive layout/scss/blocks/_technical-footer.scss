@@ -1,0 +1,42 @@
+.technical-footer {
+    padding: 32px 0;
+
+    @include vp-1439 {
+        padding: 20px 0;
+    }
+
+    &__contacts {
+        justify-content: center;
+        display: flex;
+        gap: 30px;
+
+        @include vp-1439 {
+            gap: 20px;
+        }
+    }
+
+    &__contacts-mail {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: #1D252D;
+
+        @include vp-767 {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    &__contacts-tel {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #1D252D;
+
+        @include vp-767 {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1439 {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  @include vp-767 {
+    gap: 10px;
+  }
+
+  &__item {
+    width: calc(50% - 15px);
+
+    @include vp-1439 {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,168 @@
+.team-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 30px;
+  background-color: $color-twilight-blue;
+  border-radius: 20px;
+  min-height: 463px;
+
+  @include vp-1439 {
+    min-height: 373px;
+  }
+
+  @include vp-767 {
+    padding: 20px;
+    min-height: 460px;
+  }
+
+  &__job-title {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 5px 0;
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__name {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 22px;
+      margin: 0 0 12px 0;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 30px;
+    height: 100%;
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 130px 1fr;
+      gap: 15px;
+      flex-grow: 1;
+    }
+  }
+
+  &__picture {
+    @include vp-767 {
+      width: 120px;
+    }
+  }
+
+  &__img {
+    width: 220px;
+    height: 100%;
+    border-radius: 12px;
+
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__quote {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    line-height: 22px;
+
+
+    @include vp-767 {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &--center &__quote {
+    text-align: center;
+
+    @include vp-1439 {
+      text-align: left;
+    }
+  }
+
+  &__quote-text {
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__description {
+    max-width: 270px;
+    margin: 0 0 20px auto;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+
+    @include vp-1439 {
+      max-width: 300px;
+    }
+
+    @include vp-767 {
+      max-width: 240px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &--center &__description {
+    text-align: center;
+
+    @include vp-1439 {
+      text-align: right;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto 0 0 0;
+
+    @include vp-1439 {
+      justify-content: flex-end;
+    }
+
+    @include vp-767 {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__link {
+    width: 140px;
+    padding: 7px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-blue-charcoa;
+    text-align: center;
+    border-radius: 40px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+
+  &__link--secondary {
+    background-color: $color-ecru-white;
+  }
+}
